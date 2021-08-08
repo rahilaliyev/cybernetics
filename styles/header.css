@@ -46,6 +46,12 @@ nav ul {
 nav ul li a {
   padding: 10px;
   letter-spacing: 0.09rem;
+  transition: 1s;
+  border: 1px solid black;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #2196f3;
 }
 
 .header-middle {
@@ -92,4 +98,48 @@ h1 {
 
 .hamburger {
   display: none;
+}
+
+.scroll-down {
+  height: 50px;
+  width: 30px;
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid white;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 1s ease-in-out infinite;
+}
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 1s;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
 }
