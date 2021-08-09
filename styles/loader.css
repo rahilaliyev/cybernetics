@@ -1,0 +1,51 @@
+.loader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  animation: changeColor 1s linear infinite;
+}
+
+.loader .loading {
+  position: relative;
+  display: flex;
+}
+
+.loader .loading .dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 20px 10px;
+  transform: scale(0.1);
+  border-radius: 50%;
+  animation: animateDot 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+  background-color: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a,
+    0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+}
+
+@keyframes animateDot {
+  0%,
+  50%,
+  100% {
+    transform: scale(0.1);
+  }
+  10% {
+    transform: scale(1);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -12,3 +12,8 @@ window.addEventListener("scroll", () => {
     document.querySelector("body nav").classList.remove("active");
   }
 });
+
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader");
+  loader.className += "hidden";
+});
