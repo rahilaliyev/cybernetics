@@ -6,7 +6,7 @@ hamburgerMenu.addEventListener("click", () => {
 });
 
 window.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 500) {
     document.querySelector("body nav").classList.add("active");
   } else {
     document.querySelector("body nav").classList.remove("active");
