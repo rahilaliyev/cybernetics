@@ -1,5 +1,5 @@
 header {
-  width: 99vw;
+  width: 100vw;
   height: 100vh;
   background-image: url(../assets/bckgrnd.jpg);
   background-repeat: no-repeat;
@@ -100,6 +100,10 @@ h1 {
 
 .header-middle .header-social-links a {
   margin: 25px;
+}
+
+.header-middle .header-social-links {
+  display: flex;
 }
 
 .header-button {

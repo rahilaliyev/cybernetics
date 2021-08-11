@@ -11,7 +11,7 @@
     flex-direction: column;
     height: 40vh;
     justify-content: center;
-    left: -70%;
+    left: -90%;
     position: absolute;
     top: 80px;
     transition: all 1s ease-in-out;
@@ -58,9 +58,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-  header {
-    width: 100vw;
-  }
   .info-image-text {
     flex-direction: column;
     margin-top: 60px;
@@ -89,5 +86,41 @@
 
   .contact-text-icon {
     margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  .header-middle h3 {
+    width: 100%;
+  }
+
+  .header-social-links {
+    flex-direction: column;
+  }
+
+  .header-social-links .header-rows {
+    margin-bottom: 20px;
+  }
+
+  .info-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-image img {
+    width: 70%;
+  }
+
+  .contact-container p {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }

@@ -36,24 +36,28 @@ footer {
   border-radius: 50%;
 }
 
-.footer-icons:first-child {
+.footer-rows {
+  display: flex;
+}
+
+.footer-rows:first-child .footer-icons:first-child {
   background-color: black;
 }
 
-.footer-icons:nth-child(2) {
+.footer-rows:first-child .footer-icons:nth-child(2) {
   background-color: #4267b2;
 }
 
-.footer-icons:nth-child(3) {
+.footer-rows:first-child .footer-icons:nth-child(3) {
   background-color: #1da1f2;
 }
 
-.footer-icons:nth-child(4) {
+.footer-rows:last-child .footer-icons:first-child {
   background-color: #ff69b4;
 }
-.footer-icons:nth-child(5) {
+.footer-rows:last-child .footer-icons:nth-child(2) {
   background-color: #0e76a8;
 }
-.footer-icons:last-child {
+.footer-rows:last-child .footer-icons:last-child {
   background-color: #c8232c;
 }
