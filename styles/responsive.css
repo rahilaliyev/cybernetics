@@ -13,7 +13,7 @@
     justify-content: center;
     left: -70%;
     position: absolute;
-    top: 82px;
+    top: 80px;
     transition: all 1s ease-in-out;
     width: 100%;
     z-index: 1;
@@ -42,6 +42,10 @@
   .info-image img {
     object-fit: contain;
   }
+
+  .info-buttons button {
+    width: 100%;
+  }
   .partners-container {
     width: 100%;
   }
@@ -54,6 +58,18 @@
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    width: 100vw;
+  }
+  .info-image-text {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .info-text {
+    width: auto;
+  }
+
   .partners .partners-cards {
     flex-direction: column;
   }
@@ -65,5 +81,13 @@
 
   .cards .card-image img {
     width: 100%;
+  }
+
+  .contact-text {
+    flex-direction: column;
+  }
+
+  .contact-text-icon {
+    margin: 10px;
   }
 }

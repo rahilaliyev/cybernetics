@@ -7,6 +7,7 @@
   align-items: center;
   background-color: black;
   animation: changeColor 1s linear infinite;
+  z-index: 11;
 }
 
 .loader .loading {

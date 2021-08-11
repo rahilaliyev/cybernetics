@@ -63,6 +63,7 @@ nav.active {
   transition: all 0.5s ease-in-out;
   width: 100%;
   background-color: black;
+  z-index: 1000;
 }
 
 .header-middle {
