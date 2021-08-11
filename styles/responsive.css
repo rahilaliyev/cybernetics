@@ -94,6 +94,9 @@
     font-size: 55px;
   }
 
+  .header-middle {
+    padding: 20px;
+  }
   .header-middle h3 {
     width: 100%;
   }
