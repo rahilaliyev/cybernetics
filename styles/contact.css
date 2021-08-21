@@ -1,13 +1,4 @@
-.contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .contact-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 60px;
 }
@@ -51,9 +42,9 @@
 }
 
 .contact-text-icon {
-  display: flex;
   flex-direction: column;
-  align-items: center;
+}
+.contact-text-icon span {
   text-align: center;
 }
 

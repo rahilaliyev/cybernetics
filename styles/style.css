@@ -47,3 +47,9 @@ button {
   outline: none;
   cursor: pointer;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

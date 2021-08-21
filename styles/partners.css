@@ -1,14 +1,8 @@
 .partners {
   background-color: #f4f4f4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .partners-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   padding: 60px;
 }
@@ -35,8 +29,6 @@
 .cards {
   width: 20%;
   background-color: white;
-  display: flex;
-  align-items: center;
   flex-direction: column;
   padding: 20px;
   border-radius: 5px;
